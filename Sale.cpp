@@ -3,3 +3,19 @@
 //
 
 #include "Sale.h"
+
+void Sale::print() const {
+
+}
+
+void Sale::setData() {
+
+}
+
+void Sale::getData() {
+
+}
+
+Sale::Sale(float array) {
+
+}
