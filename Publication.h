@@ -12,13 +12,13 @@ using namespace std;
 class Publication {
 public:
     void print() const;
-    void setData();
     void getData();
-    void setTitle(string title);
+    void putData();
+    void setTitle(string tit);
     string getTitle();
     void setPrice(double p);
     double getPrice();
-    Publication(string s = "", double p = 0.0);
+    Publication(string tit, double p);
 protected:
     string title;
     double price;

@@ -11,15 +11,13 @@
 class Book: public Publication, public Sale {
 public:
     void print() const;
-    void setData();
-    void getData();
+    void getData(int page);
+    void putData();
     void setPage(int page);
-    void getPage();
-    void setDigital(double digital);
-    void getDigital();
+    int getPage();
+    Book(string title = "", double p = 0, float a = 0, int page = 0);
 protected:
-    int page;
-    double digital;
+    int pageCount;
 };
 
 

@@ -11,31 +11,32 @@ void Publication::print() const {
 
 }
 
-void Publication::setData() {
-
-}
-
 void Publication::getData() {
 
 }
 
+void Publication::putData() {
+    cout << "Title: " << title << endl;
+    cout << "Price: $" << price << endl;
+}
 
-void Publication::setTitle(string title) {
-
+void Publication::setTitle(string tit) {
+    title = tit;
 }
 
 string Publication::getTitle() {
-    return std::string();
+    return title;
 }
 
 void Publication::setPrice(double p) {
-
+    price = p;
 }
 
 double Publication::getPrice() {
-    return 0;
+    return price;
 }
 
-Publication::Publication(string s, double p) {
-
+Publication::Publication(string tit, double p) {
+    title = tit;
+    price = p;
 }
