@@ -11,14 +11,10 @@ using namespace std;
 
 class Sale {
 public:
-    void print() const;
-    void getData(float a);
+    void getData();
     void putData();
-    void setSale(float a, float b, float c);
-    float getSale();
-    Sale(float a);
-    float saleArray[3] = {0, 0, 0};
 protected:
+    float saleArray[3];
 };
 
 

@@ -10,12 +10,8 @@
 
 class Digital: public Publication, public Sale{
 public:
-    void print() const;
-    void getData(double stor);
+    void getData();
     void putData();
-    void setStorage(double storage);
-    double getStorage();
-    Digital(string title, double p, float unnamed, float unnamed1, float unnamed2, double stor);
 protected:
     double storage;
 };

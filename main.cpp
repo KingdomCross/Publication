@@ -8,19 +8,18 @@
 #include "Book.h"
 #include "Digital.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    Book book("Hello World", 14.25, 14.25, 144);
-    Book book1("Father Sonavabeth", 8.25, 8.25, 90);
-    book1.Sale::getData(12.25);
-    book1.Sale::getData(12.25);
-    book1.Sale::getData(12.75);
-    book1.Sale::getData(7.25);
-    book1.putData();
-    cout << endl;
+    Book book;
+    Digital digital;
+    book.getData();
     book.putData();
+    cout << endl;
+    digital.getData();
+    digital.putData();
+    cout << endl;
     return 0;
 }

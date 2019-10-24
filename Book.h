@@ -10,12 +10,8 @@
 
 class Book: public Publication, public Sale {
 public:
-    void print() const;
-    void getData(int page);
+    void getData();
     void putData();
-    void setPage(int page);
-    int getPage();
-    Book(string title = "", double p = 0, float a = 0, int page = 0);
 protected:
     int pageCount;
 };
